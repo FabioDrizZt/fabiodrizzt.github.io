@@ -1,79 +1,79 @@
 const proyectos = [
   {
     title: 'CV-Batman',
-    imgUrl: 'img/batman.gif',
+    imgUrl: 'img/projects/batman.gif',
     url: 'https://fabiodrizzt.github.io/CV-Batman/',
     descripcion: 'CV-Batman'
   },
   {
     title: 'HTML Forms',
-    imgUrl: 'img/htmlform.gif',
+    imgUrl: 'img/projects/htmlform.gif',
     url: 'https://fabiodrizzt.github.io/Formularios-en-HTML/',
     descripcion: 'Formularios HTML'
   },
   {
     title: 'Animaciones',
-    imgUrl: 'img/animaciones.gif',
+    imgUrl: 'img/projects/animaciones.gif',
     url: 'https://fabiodrizzt.github.io/Animaciones/',
     descripcion: 'Animaciones'
   },
   {
     title: 'PseudoSelectores',
-    imgUrl: 'img/PseudoSelectores.gif',
+    imgUrl: 'img/projects/PseudoSelectores.gif',
     url: 'https://fabiodrizzt.github.io/PseudoSelectores/',
     descripcion: 'PseudoSelectores'
   },
   {
     title: 'Pizza&Front',
-    imgUrl: 'img/pizza.gif',
+    imgUrl: 'img/projects/pizza.gif',
     url: 'https://fabiodrizzt.github.io/PizzaandFront/',
     descripcion: 'Pizza&Front'
   },
   {
     title: 'Super Heroes',
-    imgUrl: 'img/sup.gif',
+    imgUrl: 'img/projects/sup.gif',
     url: 'https://fabiodrizzt.github.io/SuperHeroes/',
     descripcion: 'Super Heroes'
   },
   {
     title: 'Game Shop',
-    imgUrl: 'img/game.png',
+    imgUrl: 'img/projects/game.png',
     url: 'https://fabiodrizzt.github.io/GameShop/',
     descripcion: 'bolsa de juegos'
   },
   {
     title: 'Manage',
-    imgUrl: 'img/manage.svg',
+    imgUrl: 'img/projects/manage.svg',
     url: 'https://fabiodrizzt.github.io/Manage/',
     descripcion: 'Manage'
   },
   {
     title: 'Pet Shop',
-    imgUrl: 'img/pet-shop.png',
+    imgUrl: 'img/projects/pet-shop.png',
     url: 'hhttps://fabiodrizzt.github.io/PetShop/',
     descripcion: 'logo pet shop'
   },
   {
     title: 'Instafront',
-    imgUrl: 'img/instafront.png',
+    imgUrl: 'img/projects/instafront.png',
     url: 'https://fabiodrizzt.github.io/InstaFront/',
     descripcion: 'logo instafront'
   },
   {
     title: 'To Do List',
-    imgUrl: 'img/to-do-list-checklist.gif',
+    imgUrl: 'img/projects/to-do-list-checklist.gif',
     url: 'https://fabiodrizzt.github.io/Lista-de-Tareas/',
     descripcion: 'To Do List'
   },
   {
     title: "Barbie's tasks",
-    imgUrl: 'img/barbie.gif',
+    imgUrl: 'img/projects/barbie.gif',
     url: 'https://fabiodrizzt.github.io/Mi-Lista-de-Tareas-de-Barbie/',
     descripcion: 'Barbie tasks'
   },
   {
     title: 'Slide Puzzle 3x3',
-    imgUrl: 'img/slide-puzzle.gif',
+    imgUrl: 'img/projects/slide-puzzle.gif',
     url: 'https://fabiodrizzt.github.io/Slide-Puzzle-3x3/',
     descripcion: 'Slide Puzzle'
   }
