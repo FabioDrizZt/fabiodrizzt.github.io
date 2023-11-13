@@ -1,0 +1,71 @@
+#portfolio {
+  background-color: var(--backgroundPortfolio);
+  width: 99vw;
+}
+
+#portfolio h2 {
+  color: black;
+  padding-top: 2rem;
+}
+
+.proyecto {
+  background: #e8f4fc;
+  text-decoration: none;
+}
+
+.proyectos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin: 2rem 0rem;
+}
+
+#portfolio article {
+  margin: 2rem 0rem 2rem 0rem;
+}
+
+#portfolio article .descripcion-portfolio {
+  font-size: 1.7rem;
+  padding-left: 1.7rem;
+  padding-top: 1rem;
+}
+
+.proyJava {
+  padding-bottom: 3rem;
+}
+
+#portfolio .caja:active {
+  background-color: #095f87;
+  transition: 0s;
+}
+
+/* -------------- Media query para tablet --------------  */
+
+@media (min-width: 767px) {
+  #portfolio .caja:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+
+  #portfolio .caja:active {
+    transition: 0s;
+  }
+}
+
+/* -------------- Media query para desktop--------------  */
+
+@media (min-width: 1024px) {
+  #portfolio {
+    background-color: white;
+  }
+
+  #portfolio h2 {
+    color: var(--colorSubtitles);
+  }
+
+  .proyectos {
+    gap: 3rem;
+    justify-content: flex-start;
+  }
+}

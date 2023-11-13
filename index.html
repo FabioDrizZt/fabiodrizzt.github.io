@@ -1,46 +1,375 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="css/normalize.css" type="text/css">
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/materialdesignicons.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-</head>
-<body>
-
-    <section class="home" id="home">
-        <div class="titles">
-            <div class="titles-wrap">
-                <h1>Me llamo <a href="https://www.linkedin.com/in/fabiodrizzt/" class="btn"><span>Fabio Argañaraz</span></a> </h1>
-                <h2><span class="txt-rotate"></span></h2>
-                                             
-                <p>Terminando mi formación en Desarrollo Web Full Stack en <a href="soyhenry.com" class="btn">soyHenry</a>, con más de 500 horas de práctica de desarrollo en HTML5, CSS3, JavaScript, React, Express, Node.js, PHP, Postgres, RESTful API y más.</p>
-
-                <p>Mi objetivo es seguir aprendiendo y formando mas conocimientos, insertarme en el ámbito de desarrollo web, tengo los conocimientos integrales tanto de frontend como de backend siendo esta mi fortaleza y me gustaría liderar equipos de desarrollos a corto~mediano plazo.</p>
-
-                <p>Tengo experiencia en el ámbito docente universitario desde 2016 en las materias Introducción a la Informática, Metodología de la Programación, Base de Datos, Modelos y Simulación. Como Instructor en el plan 111mil Programadores y como referente Tecnológico en UNICEF.</p>
-
-                <p>Egresé de la Facultad de Ingeniería de la UNJu en 2015, realizando mi practica profesional en el área de telemática de la policía de Jujuy un software de Gestión de Móviles, con un proyecto final denominado Comunicación Hablada y Autodidacta para Personas con Trastorno del Espectro Autista (CHAPTEA) y con el honor de obtener el mejor promedio de mi carrera.</p>
-
-                <p>Portfolio en github: github.com/FabioDrizZt</p>
-
-                <p>Información de contacto: Ing.Fabio.Arg@Gmail.com | +54 388 5148954</p>
-                
-                <div class="getintouch">
-                    <div><a href="mailto:ing.fabio.arg@gmail.com" class="btn">Contáctame</a></div>
-                </div>
-
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Style/body_Style.css" />
+    <link rel="stylesheet" href="Style/header_Style.css" />
+    <link rel="stylesheet" href="Style/main_Style.css" />
+    <link rel="stylesheet" href="Style/main_sobre_mi_Style.css" />
+    <link rel="stylesheet" href="Style/main_portfolio_Style.css" />
+    <link rel="stylesheet" href="Style/main_contacto_Style.css" />
+    <link rel="stylesheet" href="Style/footer_Style.css" />
+    <title>Fabio D. Argañaraz A.</title>
+  </head>
+  <body>
+    <header id="home">
+      <section class="header-pt1">
+        <article class="yo">
+          <div class="icono-yo"></div>
+          <h1 class="mi-nombre">Fabio D. Argañaraz</h1>
+          <div class="tipeado-mobile">
+            <p class="tipeado">I'm a <span class="typed"></span></p>
+          </div>
+        </article>
+        <article class="opciones-de-navegacion">
+          <ul>
+            <li>
+              <a href="#home" class="opciones">
+                <i class="fa-sharp fa-solid fa-house"></i>
+                <span>Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="#sobre-mi" class="opciones">
+                <i class="fa-solid fa-user"></i>
+                <span>About me</span>
+              </a>
+            </li>
+            <li>
+              <a href="#portfolio" class="opciones">
+                <i class="fa-solid fa-laptop-file"></i>
+                <span>Portfolio</span></a
+              >
+            </li>
+            <li>
+              <a href="#contacto" class="opciones">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Contact</span></a
+              >
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section class="header-pt2">
+        <article class="pt2-contenido">
+          <div class="imagen-grande"></div>
+          <div class="contenedor-nombre-descr">
+            <p class="nombre-grande">Fabio D. Argañaraz</p>
+            <p class="tipeado">I'm a <span class="typed"></span></p>
+          </div>
+        </article>
+      </section>
+      <a href="#home" title="home" class="enlace-boton">
+        <div class="up boton-invisible">
+          <i class="fa-solid fa-arrow-up"></i>
         </div>
-    </section>
+      </a>
+    </header>
 
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/typed.min.js"></script>
-    <script src="js/script.js"></script>
-</body>
+    <main>
+      <section id="sobre-mi">
+        <h2>About Me</h2>
+        <div class="separator"></div>
+        <article>
+          <p class="intro">
+            🚀 Full Stack Developer | 💻 Computer Science Teacher | 🌐 Web
+            Enthusiast
+          </p>
+          <p class="intro">
+            Passionate about crafting seamless web experiences and empowering
+            the next generation of developers. Currently, I thrive in both
+            worlds as a Full Stack Developer, diving into technologies like
+            React, Redux, Typescript, and more. My journey extends beyond
+            coding—I'm equally dedicated to fostering knowledge through teaching
+            Computer Science. Let's build, innovate, and learn together! 🌈✨
+          </p>
+          <div class="descargable">
+            <a
+              href="https://raw.githubusercontent.com/FabioDrizZt/FabioDrizZt/main/Fabio-D-Arga%C3%B1araz-Resume.pdf"
+              download
+            >
+              <p>Curriculum Vitae</p>
+              <i class="fa-solid fa-circle-down"></i>
+            </a>
+          </div>
+        </article>
+        <article class="datos-personales">
+          <ul>
+            <li class="personal-info">
+              <i class="fa-solid fa-angle-right"></i>
+              <p class="title">Name and Surname:</p>
+              <p class="info">Fabio D. Argañaraz A.</p>
+            </li>
+            <li class="personal-info">
+              <i class="fa-solid fa-angle-right"></i>
+              <p class="title">Date of Birth:</p>
+              <p class="info">March 16, 1988</p>
+            </li>
+            <li class="personal-info">
+              <i class="fa-solid fa-angle-right"></i>
+              <p class="title">Email:</p>
+              <p class="info">ing.fabio.arg@gmail.com</p>
+            </li>
+          </ul>
+          <ul>
+            <li class="personal-info">
+              <i class="fa-solid fa-angle-right"></i>
+              <p class="title">Phone:</p>
+              <p class="info">+54 388 5733294</p>
+            </li>
+            <li class="personal-info">
+              <i class="fa-solid fa-angle-right"></i>
+              <p class="title">Place of Residence:</p>
+              <p class="info">San Salvador de Jujuy, Jujuy, Argentina</p>
+            </li>
+          </ul>
+        </article>
+        <article>
+          <h2>Skills</h2>
+          <div class="separator"></div>
+          <div class="tecnologias">
+            <!-- Hecho en js renderizador_de_tecnologias.js -->
+          </div>
+        </article>
+        <article class="education">
+          <h2>Developer Training</h2>
+          <div class="separator"></div>
+          <div class="education-box">
+            <div class="text-info">
+              <div class="title-education">
+                <div class="marker"></div>
+                <h3>Full Stack Web Developer</h3>
+              </div>
+              <div class="institution">
+                <p>Soy Henry</p>
+              </div>
+              <div class="year">
+                <p>June 2020</p>
+              </div>
+              <div class="education-info">
+                <div class="item">
+                  <i class="fa-solid fa-angle-right"></i>
+                  <p>Digital Fundamentals</p>
+                </div>
+                <div class="item">
+                  <i class="fa-solid fa-angle-right"></i>
+                  <p>Front-End: HTML, CSS, JS, React, Redux</p>
+                </div>
+                <div class="item">
+                  <i class="fa-solid fa-angle-right"></i>
+                  <p>Back-End: Node.js, Express</p>
+                </div>
+                <div class="item">
+                  <i class="fa-solid fa-angle-right"></i>
+                  <p>Database: PostreSQL, Sequelize</p>
+                </div>
+                <div class="item">
+                  <i class="fa-solid fa-angle-right"></i>
+                  <p>Unit and Integration Testing</p>
+                </div>
+                <div class="item item-last">
+                  <i class="fa-solid fa-angle-right"></i>
+                  <p>
+                    Quick learning, teamwork, time management, effective
+                    communication, professional attitude.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <img src="img/diploma henry.png" alt="certificate" />
+          </div>
+        </article>
+        <article class="education">
+          <div class="separator"></div>
+          <div class="education-box">
+            <div class="text-info">
+              <div class="title-education">
+                <div class="marker"></div>
+                <h3>Bachelor of Engineering</h3>
+              </div>
+              <div class="institution">
+                <p>Faculty of Engineering - UNJu</p>
+              </div>
+              <div class="year">
+                <p>2009 - 2015</p>
+              </div>
+              <div class="education-info">
+                <div class="item">
+                  <i class="fa-solid fa-angle-right"></i>
+                  <p>The Computer Engineering Education of the School of Engineering of the National University of Jujuy has a solid conceptual training in Basic Science contents, common to all Engineering Degrees, to support and develop the specific disciplines and an adequate command of Basic Technologies translated into the creative application of the knowledge of the fundamental principles of the different disciplines, to the solution of Computer Engineering problems.</p>
+                </div>
+              </div>
+            </div>
+            <img src="img/Diploma UNJu.jfif" alt="certificate" />
+          </div>
+        </article>
+      </section>
+      <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="separator"></div>
+        <article>
+          <div class="title-education">
+            <div class="marker"></div>
+            <h3>Front-end - Static & Dynamic Layouts</h3>
+          </div>
+          <p class="descripcion-portfolio">
+            Static & dynamic layouts using HTML, CSS, SASS and JS
+          </p>
+          <div class="proyectos">
+            <!-- Made in js renderer_maquetados.js -->
+          </div>
+        </article>
+      </section>
+      <section id="contacto">
+        <h2>Contact</h2>
+        <div class="separator"></div>
+
+        <article>
+          <div class="informacion-de-contacto">
+            <div class="ubicacion">
+              <div class="fondo-icono-contacto">
+                <i class="fa-sharp fa-solid fa-map-location-dot"></i>
+              </div>
+              <div class="info-contacto">
+                <p class="subt-contacto">Location:</p>
+                <p class="detalles-contacto">
+                  San Salvador de Jujuy, Jujuy, Argentina
+                </p>
+              </div>
+            </div>
+            <div class="email">
+              <div class="fondo-icono-contacto">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="info-contacto">
+                <p class="subt-contacto">Email:</p>
+                <p class="detalles-contacto">ing.fabio.arg@gmail.com</p>
+              </div>
+            </div>
+            <div class="telefono">
+              <div class="fondo-icono-contacto">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="info-contacto">
+                <p class="subt-contacto">Telephone:</p>
+                <p class="detalles-contacto">+54 388 5733294</p>
+              </div>
+            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6511.708159256423!2d-65.30057316237756!3d-24.18837122084182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f4313922973%3A0x552c0eaeb6432a0!2sPlaza%20Belgrano!5e0!3m2!1ses-419!2sar!4v1699832103917!5m2!1ses-419!2sar"
+              height="450"
+              class="mapa"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+          <div class="form-area">
+            <form id="form" name="form">
+              <div class="box-name-email">
+                <div>
+                  <label for="name">Your name</label>
+                  <input
+                    class="input-style input-name"
+                    type="text"
+                    name="name"
+                    id="name"
+                  />
+                  <div class="error-name">
+                    <p>Enter a valid name</p>
+                  </div>
+                </div>
+                <div>
+                  <label for="email">Your email</label>
+                  <input
+                    class="input-style input-email"
+                    type="email"
+                    name="email"
+                    id="email"
+                  />
+                  <div class="error-email">
+                    <p>Enter a valid email</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <label for="topic">Topic</label>
+                <input
+                  class="input-style input-topic"
+                  type="text"
+                  name="topic"
+                  id="topic"
+                />
+                <div class="error-topic">
+                  <p>Enter a valid topic</p>
+                </div>
+              </div>
+              <div>
+                <label for="message">Your message</label>
+                <textarea
+                  class="input-style-textarea input-message"
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+                <div class="error-msg">
+                  <p>Enter a message</p>
+                </div>
+              </div>
+              <button class="button" type="submit"><p>Send</p></button>
+            </form>
+            
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <div class="autor">
+        <p class="hecho-por">Made by:</p>
+        <p class="fabio">Fabio D. Agañaraz A.</p>
+      </div>
+      <div class="iconos-footer">
+        <a
+          rel="noopener"
+          title="linkedin"
+          href="https://www.linkedin.com/in/fabiodrizzt/"
+          target="_blank"
+        >
+          <div class="circulo-icono-footer">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </div>
+        </a>
+        <a
+          rel="noopener"
+          title="instagram"
+          href="https://www.instagram.com/fabiodrizzt"
+          target="_blank"
+        >
+          <div class="circulo-icono-footer">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </a>
+        <a
+          rel="noopener"
+          title="github"
+          href="https://github.com/FabioDrizZt=repositories"
+          target="_blank"
+        >
+          <div class="circulo-icono-footer">
+            <i class="fa-brands fa-github"></i>
+          </div>
+        </a>
+      </div>
+    </footer>
+    <script src="renderizador_de_tecnologias.js"></script>
+    <script src="renderizador_proyectos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="tipeado_developer_header.js"></script>
+    <script src="validacion_input.js"></script>
+    <script src="animacion_flecha.js"></script>
+  </body>
 </html>

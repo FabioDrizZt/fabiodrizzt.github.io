@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&family=Silkscreen&display=swap');
+@import url('https://use.fontawesome.com/releases/v6.2.1/css/all.css');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0%;
+}
+
+:root {
+  --backgroundPortfolio: rgba(20, 157, 221, 0.1);
+  --colorFuenteHeader: lightgray;
+  --colorPrimarioFondo: #040b14;
+  --colorSubtitles: #0f9358;
+  --fuentePortada: 'Silkscreen', cursive;
+  --fuentePrimaria: 'Kanit', sans-serif;
+  --tamanioFuenteH2: 2.5rem;
+}
+
+html {
+  font-family: var(--fuentePrimaria);
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}

@@ -1,0 +1,232 @@
+h2 {
+  color: var(--colorSubtitles);
+  font-size: var(--tamanioFuenteH2);
+  font-weight: 400;
+  margin: 2rem 0rem 0.5rem 0rem;
+}
+
+.separator {
+  background-color: var(--colorSubtitles);
+  height: 3px;
+  margin-bottom: 1rem;
+  width: 50px;
+}
+
+/*----Texto de presentacion----*/
+.intro {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+/*----Boton para descargar cv----*/
+.descargable {
+  margin-top: 1.5rem;
+}
+
+.descargable a {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  text-decoration: none;
+}
+
+.descargable a p {
+  font-size: 1.5rem;
+}
+
+.descargable a .fa-circle-down {
+  font-size: 1.5rem;
+}
+
+.descargable a p,
+.descargable a i {
+  color: var(--colorSubtitles);
+}
+
+/*----Datos Personales----*/
+
+.datos-personales {
+  margin-top: 2rem;
+}
+.personal-info {
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.fa-angle-right {
+  color: var(--colorSubtitles);
+  font-size: 1.6rem;
+}
+
+.personal-info .title {
+  font-weight: 400;
+}
+
+.personal-info .info {
+  font-weight: 300;
+}
+.personal-info .title,
+.personal-info .info {
+  font-size: 1.4rem;
+}
+
+/*----Cajas----*/
+
+.tecnologias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin: 2rem 0rem;
+}
+.caja {
+  align-items: center;
+  background: #e0e0e0;
+  border-radius: 50px;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 150px;
+}
+
+.caja p {
+  color: var(--colorSubtitles);
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0rem 1rem;
+}
+.caja img {
+  width: 90px;
+}
+
+/*----Formacion como desarrollador----*/
+
+.formacion {
+  margin-top: 3rem;
+}
+
+.formacion h2 {
+  font-size: 2.2rem;
+}
+
+.education-box {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+
+.title-education {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+}
+
+.marker {
+  background: linear-gradient(
+    180deg,
+    rgb(20, 221, 94) 0%,
+    rgba(219, 217, 217, 1) 86%
+  );
+  height: 25px;
+  width: 6px;
+}
+
+h3 {
+  font-size: 2.1rem;
+  font-weight: 400;
+}
+
+.institution {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.year {
+  align-items: center;
+  background-color: var(--colorSubtitles);
+  border-radius: 3rem;
+  display: flex;
+  height: 20px;
+  justify-content: center;
+  opacity: 0.7;
+  width: 180px;
+}
+
+.year p {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.education-info {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.education-info .item {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+}
+
+.item-ultimo i {
+  align-self: flex-start;
+}
+
+.institution,
+.year,
+.education-info {
+  margin: 0.5rem 0rem 0rem 1.7rem;
+}
+
+.education-box img {
+  margin: 1rem 0rem 0rem 1.7rem;
+  width: 300px;
+  height: auto;
+  align-self: center;
+}
+
+/* -------------- Media query para tablet --------------  */
+
+@media (min-width: 767px) {
+  .education-box {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .education-box .text-info {
+    width: 350px;
+  }
+
+  .education-box img {
+    margin-right: 2rem;
+  }
+}
+
+/* -------------- Media query para desktop--------------  */
+
+@media (min-width: 1024px) {
+  .tecnologias {
+    gap: 3rem;
+  }
+
+  .education-box {
+    background-color: #e4f3f7;
+    border-radius: 10px;
+    padding: 1rem 0rem 2rem 1rem;
+  }
+
+  .education-box img {
+    width: 500px;
+  }
+
+  .education-info .item {
+    font-size: 1.6rem;
+  }
+}
