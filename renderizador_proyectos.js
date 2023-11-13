@@ -43,7 +43,7 @@ const proyectos = [
   },
   {
     title: 'Manage',
-    imgUrl: 'img/Manage.svg',
+    imgUrl: 'img/manage.svg',
     url: 'https://fabiodrizzt.github.io/Manage/',
     descripcion: 'Manage'
   },
