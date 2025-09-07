@@ -317,10 +317,13 @@
                 <p>2009 - 2015 (Graduado)</p>
               </div>
               <div class="education-info">
-                <div class="item">
+                <div class="item medal-item">
                   <i class="fa-solid fa-angle-right"></i>
                   <p>
-                    🏆
+                    <span class="medal-icon" data-front="img/medalla_frente.jfif" data-back="img/medalla_atras.jfif">
+                      🏆
+                      <span class="medal-badge">EXCELENCIA</span>
+                    </span>
                     <strong>Medalla al Mejor Promedio de la Carrera</strong> -
                     Reconocimiento académico por excelencia académica
                   </p>
@@ -333,16 +336,59 @@
                     en Informática
                   </p>
                 </div>
-                <div class="item item-last">
+                <div class="item">
                   <i class="fa-solid fa-angle-right"></i>
                   <p>
                     Aplicación creativa de conocimientos de principios
                     fundamentales de diferentes disciplinas
                   </p>
                 </div>
+                <div class="item">
+                  <i class="fa-solid fa-angle-right"></i>
+                  <p>
+                    Desarrollo de competencias en programación, bases de datos,
+                    redes de computadoras y sistemas de información
+                  </p>
+                </div>
+                <div class="item item-last">
+                  <i class="fa-solid fa-angle-right"></i>
+                  <p>
+                    Capacitación en metodologías de desarrollo de software,
+                    gestión de proyectos y trabajo en equipo multidisciplinario
+                  </p>
+                </div>
               </div>
             </div>
-            <img src="img/Diploma UNJu.jfif" alt="certificate" />
+            <div class="education-images">
+              <div class="medal-gallery" id="medalGallery">
+                <div class="medal-image" data-src="img/Diploma UNJu.jfif">
+                  <img src="img/Diploma UNJu.jfif" alt="Diploma UNJu" />
+                  <div class="medal-overlay">
+                    <span class="medal-label">Diploma UNJu</span>
+                  </div>
+                </div>
+                <div class="medal-image active" data-src="img/medalla_frente.jfif">
+                  <img src="img/medalla_frente.jfif" alt="Medalla - Frente" />
+                  <div class="medal-overlay">
+                    <span class="medal-label">Medalla - Frente</span>
+                  </div>
+                </div>
+                <div class="medal-image" data-src="img/medalla_atras.jfif">
+                  <img src="img/medalla_atras.jfif" alt="Medalla - Reverso" />
+                  <div class="medal-overlay">
+                    <span class="medal-label">Medalla - Reverso</span>
+                  </div>
+                </div>
+                <div class="medal-navigation">
+                  <button class="medal-nav-btn prev-btn" aria-label="Imagen anterior">
+                    <i class="fa-solid fa-chevron-left"></i>
+                  </button>
+                  <button class="medal-nav-btn next-btn" aria-label="Siguiente imagen">
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </article>
 
@@ -575,6 +621,16 @@
         </a>
       </div>
     </footer>
+
+    <!-- Modal para imágenes ampliadas -->
+    <div id="imageModal" class="image-modal">
+      <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <img id="modalImage" src="" alt="" />
+        <div class="modal-caption"></div>
+      </div>
+    </div>
+
     <script src="js/renderizador_de_tecnologias.js"></script>
     <script src="js/renderizador_proyectos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
@@ -583,5 +639,6 @@
     <script src="js/animacion_flecha.js"></script>
     <script src="js/matrix_rain.js"></script>
     <script src="js/matrix_header.js"></script>
+    <script src="js/medal_interaction.js"></script>
   </body>
 </html>

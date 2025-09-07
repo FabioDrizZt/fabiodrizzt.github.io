@@ -91,7 +91,8 @@
 
 .education-box {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 2rem;
   margin-top: 3rem;
   background: linear-gradient(135deg, var(--matrix-black) 0%, var(--matrix-dark-gray) 100%);
   border: 2px solid var(--matrix-green);
@@ -102,6 +103,8 @@
     inset 0 0 20px rgba(0, 255, 0, 0.1);
   position: relative;
   overflow: hidden;
+  min-height: 400px;
+  align-items: stretch;
 }
 
 .education-box::before {
@@ -190,16 +193,199 @@
   z-index: 1;
 }
 
-.education-box img {
-  margin: 1rem 0rem 0rem 1.7rem;
-  width: 300px;
+/* Contenedor de texto - ocupa más espacio */
+.text-info {
+  flex: 1.5;
+  position: relative;
+  z-index: 1;
+  max-width: 60%;
+}
+
+/* Contenedor de imágenes */
+.education-images {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  max-width: 40%;
+}
+
+.diploma-image {
+  width: 100%;
+  max-width: 280px;
   height: auto;
-  align-self: center;
   border: 2px solid var(--matrix-green);
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.diploma-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(0, 255, 0, 0.5);
+}
+
+/* Galería de medallas */
+.medal-gallery {
   position: relative;
-  z-index: 1;
+  width: 180px;
+  height: 180px;
+  border: 2px solid var(--matrix-green);
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 25px rgba(0, 255, 0, 0.4);
+  transition: all 0.3s ease;
+}
+
+.medal-gallery:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 35px rgba(0, 255, 0, 0.6);
+}
+
+.medal-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.medal-image.active {
+  opacity: 1;
+}
+
+/* Icono de medalla interactivo */
+.medal-item {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.medal-item:hover {
+  background: rgba(0, 255, 0, 0.1);
+  border-radius: 8px;
+  padding: 0.5rem;
+  margin: -0.5rem;
+}
+
+.medal-icon {
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+  margin-right: 0.5rem;
+  position: relative;
+}
+
+.medal-icon:hover {
+  transform: scale(1.2) rotate(10deg);
+  filter: drop-shadow(0 0 10px var(--matrix-green));
+}
+
+/* Estilos específicos para desktop */
+@media (min-width: 1200px) {
+  .education-box {
+    gap: 3rem;
+    padding: 3rem;
+  }
+  
+  .text-info {
+    flex: 1.8;
+    max-width: 65%;
+  }
+  
+  .education-images {
+    flex: 1;
+    max-width: 35%;
+    gap: 2rem;
+  }
+  
+  .diploma-image {
+    max-width: 320px;
+  }
+  
+  .medal-gallery {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .education-box {
+    gap: 2.5rem;
+    padding: 2.5rem;
+  }
+  
+  .text-info {
+    flex: 1.6;
+    max-width: 62%;
+  }
+  
+  .education-images {
+    flex: 1;
+    max-width: 38%;
+  }
+  
+  .diploma-image {
+    max-width: 300px;
+  }
+  
+  .medal-gallery {
+    width: 190px;
+    height: 190px;
+  }
+}
+
+/* Responsive para educación */
+@media (max-width: 768px) {
+  .education-box {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .text-info {
+    flex: 1;
+    max-width: 100%;
+  }
+  
+  .education-images {
+    flex: 1;
+    max-width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .diploma-image {
+    max-width: 150px;
+  }
+  
+  .medal-gallery {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .education-images {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .diploma-image {
+    max-width: 200px;
+  }
+  
+  .medal-gallery {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 /* ===== PORTFOLIO ===== */
@@ -946,4 +1132,239 @@ form div label {
 
 .grid-tecnologias .caja:hover img {
   transform: scale(1.1);
+}
+
+/* ===== BADGE DE MEDALLA ===== */
+.medal-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: linear-gradient(45deg, #ffd700, #ffed4e);
+  color: #000;
+  font-size: 0.6rem;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 10px;
+  border: 2px solid #ffd700;
+  box-shadow: 0 2px 8px rgba(255, 215, 0, 0.5);
+  animation: badgeGlow 2s ease-in-out infinite alternate;
+  z-index: 10;
+}
+
+@keyframes badgeGlow {
+  0% {
+    box-shadow: 0 2px 8px rgba(255, 215, 0, 0.5);
+  }
+  100% {
+    box-shadow: 0 2px 15px rgba(255, 215, 0, 0.8), 0 0 20px rgba(255, 215, 0, 0.3);
+  }
+}
+
+/* ===== GALERÍA DE MEDALLAS ===== */
+.medal-gallery {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin: 1rem auto;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 3px solid var(--matrix-green);
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.medal-gallery:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(0, 255, 0, 0.5);
+}
+
+.medal-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.medal-image.active {
+  opacity: 1;
+}
+
+.medal-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.medal-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  padding: 1rem;
+  text-align: center;
+}
+
+.medal-label {
+  color: var(--matrix-green);
+  font-weight: bold;
+  font-size: 1rem;
+  text-shadow: 0 0 10px var(--matrix-green);
+}
+
+.medal-navigation {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.medal-nav-btn {
+  background: rgba(0, 255, 0, 0.2);
+  border: 2px solid var(--matrix-green);
+  color: var(--matrix-green);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  pointer-events: all;
+  backdrop-filter: blur(5px);
+}
+
+.medal-nav-btn:hover {
+  background: rgba(0, 255, 0, 0.4);
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+}
+
+.medal-nav-btn i {
+  font-size: 0.9rem;
+}
+
+/* ===== MODAL DE IMÁGENES ===== */
+.image-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(5px);
+  align-items: center;
+  justify-content: center;
+  animation: modalFadeIn 0.3s ease;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: modalSlideIn 0.3s ease;
+}
+
+@keyframes modalSlideIn {
+  from {
+    transform: scale(0.8) translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+
+.modal-content img {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(0, 255, 0, 0.3);
+  border: 2px solid var(--matrix-green);
+}
+
+.modal-close {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  color: var(--matrix-green);
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 1001;
+}
+
+.modal-close:hover {
+  color: var(--matrix-green-bright);
+  transform: scale(1.2);
+  text-shadow: 0 0 10px var(--matrix-green);
+}
+
+.modal-caption {
+  color: var(--matrix-green);
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  text-align: center;
+  text-shadow: 0 0 10px var(--matrix-green);
+  background: rgba(0, 0, 0, 0.7);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: 1px solid var(--matrix-green);
+}
+
+/* ===== RESPONSIVE PARA GALERÍA DE MEDALLAS ===== */
+@media (max-width: 768px) {
+  .medal-gallery {
+    width: 180px;
+    height: 180px;
+  }
+  
+  .medal-nav-btn {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .medal-nav-btn i {
+    font-size: 0.8rem;
+  }
+  
+  .modal-content img {
+    max-height: 70vh;
+  }
+  
+  .modal-caption {
+    font-size: 1rem;
+  }
 }
