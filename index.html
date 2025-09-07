@@ -1,23 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="Style/body_Style.css" />
-    <link rel="stylesheet" href="Style/header_Style.css" />
-    <link rel="stylesheet" href="Style/main_Style.css" />
-    <link rel="stylesheet" href="Style/main_sobre_mi_Style.css" />
-    <link rel="stylesheet" href="Style/main_portfolio_Style.css" />
-    <link rel="stylesheet" href="Style/main_contacto_Style.css" />
-    <link rel="stylesheet" href="Style/footer_Style.css" />
-    <title>Fabio D. Argañaraz A.</title>
+    <meta
+      name="description"
+      content="Fabio D. Argañaraz - Full Stack Developer con 5 años de experiencia y Profesor de Informática. Especializado en React, Next.js, Java/Spring Boot, Node.js, PostgreSQL, MongoDB. Disponible para trabajo remoto en Argentina."
+    />
+    <meta
+      name="keywords"
+      content="Full Stack Developer, React, Next.js, Java, Spring Boot, Node.js, PostgreSQL, MongoDB, Profesor de Informática, Argentina, Freelancer"
+    />
+    <meta name="author" content="Fabio D. Argañaraz" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>
+      Fabio D. Argañaraz - Full Stack Developer & Profesor de Informática
+    </title>
   </head>
   <body>
     <header id="home">
+      <div class="matrix-rain-header"></div>
       <section class="header-pt1">
         <article class="yo">
           <div class="icono-yo"></div>
-          <h1 class="mi-nombre">Fabio D. Argañaraz</h1>
+          <h1 class="mi-nombre glitch" data-text="Fabio D. Argañaraz">
+            Fabio D. Argañaraz
+          </h1>
           <div class="tipeado-mobile">
             <p class="tipeado">I'm a <span class="typed"></span></p>
           </div>
@@ -33,7 +41,7 @@
             <li>
               <a href="#sobre-mi" class="opciones">
                 <i class="fa-solid fa-user"></i>
-                <span>About me</span>
+                <span>Sobre mí</span>
               </a>
             </li>
             <li>
@@ -43,9 +51,27 @@
               >
             </li>
             <li>
+              <a href="#skills" class="opciones">
+                <i class="fa-solid fa-code"></i>
+                <span>Skills</span></a
+              >
+            </li>
+            <li>
+              <a href="#experiencia" class="opciones">
+                <i class="fa-solid fa-briefcase"></i>
+                <span>Experiencia</span></a
+              >
+            </li>
+            <li>
+              <a href="#educacion" class="opciones">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <span>Educación</span></a
+              >
+            </li>
+            <li>
               <a href="#contacto" class="opciones">
                 <i class="fa-solid fa-envelope"></i>
-                <span>Contact</span></a
+                <span>Contacto</span></a
               >
             </li>
           </ul>
@@ -55,7 +81,9 @@
         <article class="pt2-contenido">
           <div class="imagen-grande"></div>
           <div class="contenedor-nombre-descr">
-            <p class="nombre-grande">Fabio D. Argañaraz</p>
+            <p class="nombre-grande glitch" data-text="Fabio D. Argañaraz">
+              Fabio D. Argañaraz
+            </p>
             <p class="tipeado">I'm a <span class="typed"></span></p>
           </div>
         </article>
@@ -69,20 +97,21 @@
 
     <main>
       <section id="sobre-mi">
-        <h2>About Me</h2>
+        <h2>Sobre Mí</h2>
         <div class="separator"></div>
         <article>
           <p class="intro">
-            🚀 Full Stack Developer | 💻 Computer Science Teacher | 🌐 Web
+            🚀 Full Stack Developer | 👨‍🏫 Profesor de Informática | 🌐 Web
             Enthusiast
           </p>
           <p class="intro">
-            Passionate about crafting seamless web experiences and empowering
-            the next generation of developers. Currently, I thrive in both
-            worlds as a Full Stack Developer, diving into technologies like
-            React, Redux, Typescript, and more. My journey extends beyond
-            coding—I'm equally dedicated to fostering knowledge through teaching
-            Computer Science. Let's build, innovate, and learn together! 🌈✨
+            Con 5 años de experiencia en desarrollo web y 8 años enseñando
+            programación. Apasionado por crear aplicaciones web eficientes,
+            escalables y amigables con el usuario, y por mentorizar a la próxima
+            generación de desarrolladores. Especializado en tecnologías modernas
+            como React, Next.js, Astro, Java/Spring Boot, Node.js, PostgreSQL,
+            MongoDB y herramientas de IA para desarrolladores. 🎓 Ingeniero en
+            Informática por la Universidad Nacional de Jujuy (UNJu), Argentina.
           </p>
           <div class="descargable">
             <a
@@ -98,13 +127,13 @@
           <ul>
             <li class="personal-info">
               <i class="fa-solid fa-angle-right"></i>
-              <p class="title">Name and Surname:</p>
+              <p class="title">Nombre y Apellido:</p>
               <p class="info">Fabio D. Argañaraz A.</p>
             </li>
             <li class="personal-info">
               <i class="fa-solid fa-angle-right"></i>
-              <p class="title">Date of Birth:</p>
-              <p class="info">March 16, 1988</p>
+              <p class="title">Fecha de Nacimiento:</p>
+              <p class="info">16 de Marzo, 1988</p>
             </li>
             <li class="personal-info">
               <i class="fa-solid fa-angle-right"></i>
@@ -115,114 +144,276 @@
           <ul>
             <li class="personal-info">
               <i class="fa-solid fa-angle-right"></i>
-              <p class="title">Phone:</p>
+              <p class="title">Teléfono:</p>
               <p class="info">+54 388 5733294</p>
             </li>
             <li class="personal-info">
               <i class="fa-solid fa-angle-right"></i>
-              <p class="title">Place of Residence:</p>
+              <p class="title">Lugar de Residencia:</p>
               <p class="info">San Salvador de Jujuy, Jujuy, Argentina</p>
             </li>
           </ul>
         </article>
-        <article>
+        <article id="skills">
           <h2>Skills</h2>
           <div class="separator"></div>
+          <div class="skills-controls">
+            <button class="toggle-all-btn" onclick="toggleAllCategories()">
+              <span id="toggle-text">Expandir Todas</span>
+              <i class="fa-solid fa-chevron-down" id="toggle-icon"></i>
+            </button>
+          </div>
           <div class="tecnologias">
             <!-- Hecho en js renderizador_de_tecnologias.js -->
           </div>
         </article>
-        <article class="education">
-          <h2>Developer Training</h2>
+
+        <article class="experience" id="experiencia">
+          <h2>Experiencia Profesional</h2>
+          <div class="separator"></div>
+
+          <div class="experience-timeline">
+            <div class="experience-item">
+              <div class="experience-header">
+                <h3>Full Stack Web Developer | Freelance</h3>
+                <span class="experience-period">Ene 2022 – Oct 2023</span>
+              </div>
+              <div class="experience-content">
+                <p>
+                  Completé múltiples proyectos freelance, desarrollando
+                  aplicaciones full-stack como App de Gestión Interna, App para
+                  Refugios de Animales y sistema de gestión de inventario.
+                </p>
+                <p>
+                  <strong>Tecnologías:</strong> React, Node.js, MongoDB,
+                  PostgreSQL, JavaScript, TypeScript
+                </p>
+              </div>
+            </div>
+
+            <div class="experience-item">
+              <div class="experience-header">
+                <h3>Technological Referent | UNICEF Argentina</h3>
+                <span class="experience-period">May 2018 – Dic 2018</span>
+              </div>
+              <div class="experience-content">
+                <p>
+                  Coordinación de equipos técnicos y provisión de capacitación
+                  en mantenimiento de redes para escuelas secundarias rurales.
+                </p>
+                <p>
+                  Colaboración con UNICEF y el Ministerio de Educación de Jujuy.
+                </p>
+              </div>
+            </div>
+
+            <div class="experience-item">
+              <div class="experience-header">
+                <h3>Instructor | Plan 111 Mil</h3>
+                <span class="experience-period">Sep 2017 – Dic 2018</span>
+              </div>
+              <div class="experience-content">
+                <p>
+                  Enseñanza de técnicas de programación, programación orientada
+                  a objetos, bases de datos y desarrollo de software.
+                </p>
+                <p>
+                  <strong>Tecnologías:</strong> Java, MySQL, PseInt como parte
+                  del Plan Nacional 111 Mil.
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="academic-experience">
+          <h2>Experiencia Académica y Docente</h2>
+          <div class="separator"></div>
+
+          <div class="academic-timeline">
+            <div class="academic-item">
+              <div class="academic-header">
+                <h3>
+                  Professor - Full Stack Web Programming MERN | Universidad
+                  Católica de Santiago del Estero
+                </h3>
+                <span class="academic-period">Sep 2017 – Actualidad</span>
+              </div>
+              <div class="academic-content">
+                <p>
+                  Liderazgo en el desarrollo del currículo de Programación Web
+                  Full Stack usando el stack MERN.
+                </p>
+                <p>
+                  Supervisión de proyectos basados en IA y facilitación de
+                  aprendizaje basado en simulación.
+                </p>
+              </div>
+            </div>
+
+            <div class="academic-item">
+              <div class="academic-header">
+                <h3>Professor - Full Stack Development | ADA School</h3>
+                <span class="academic-period">Feb 2024 – Actualidad</span>
+              </div>
+              <div class="academic-content">
+                <p>
+                  Enseñanza de desarrollo full-stack con enfoque en Java, Spring
+                  Boot, H2, MongoDB y PostgreSQL en entorno de aprendizaje
+                  remoto.
+                </p>
+              </div>
+            </div>
+
+            <div class="academic-item">
+              <div class="academic-header">
+                <h3>
+                  Professor - Full Stack Web Development | Universidad Nacional
+                  de Tres de Febrero
+                </h3>
+                <span class="academic-period">May 2023 – Actualidad</span>
+              </div>
+              <div class="academic-content">
+                <p>
+                  Creación de materiales de curso y ejercicios prácticos
+                  enfocados en HTML, CSS, JavaScript, React, Node.js, Express,
+                  MongoDB, SQL, MySQL y JWT.
+                </p>
+              </div>
+            </div>
+
+            <div class="academic-item">
+              <div class="academic-header">
+                <h3>Professor - Full Stack Web Development | DigitalMind</h3>
+                <span class="academic-period">May 2022 – Actualidad</span>
+              </div>
+              <div class="academic-content">
+                <p>
+                  Desarrollo de materiales de curso y ejercicios para desarrollo
+                  frontend con React.
+                </p>
+                <p>
+                  Enseñanza de desarrollo backend usando PHP, Laravel y sistemas
+                  de control de versiones.
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="education" id="educacion">
+          <h2>Educación</h2>
           <div class="separator"></div>
           <div class="education-box">
             <div class="text-info">
               <div class="title-education">
                 <div class="marker"></div>
-                <h3>Full Stack Web Developer</h3>
+                <h3>Ingeniería en Informática</h3>
               </div>
               <div class="institution">
-                <p>Soy Henry</p>
+                <p>Universidad Nacional de Jujuy (UNJu)</p>
               </div>
               <div class="year">
-                <p>June 2020</p>
+                <p>2009 - 2015 (Graduado)</p>
               </div>
               <div class="education-info">
                 <div class="item">
                   <i class="fa-solid fa-angle-right"></i>
-                  <p>Digital Fundamentals</p>
+                  <p>
+                    🏆
+                    <strong>Medalla al Mejor Promedio de la Carrera</strong> -
+                    Reconocimiento académico por excelencia académica
+                  </p>
                 </div>
                 <div class="item">
                   <i class="fa-solid fa-angle-right"></i>
-                  <p>Front-End: HTML, CSS, JS, React, Redux</p>
-                </div>
-                <div class="item">
-                  <i class="fa-solid fa-angle-right"></i>
-                  <p>Back-End: Node.js, Express</p>
-                </div>
-                <div class="item">
-                  <i class="fa-solid fa-angle-right"></i>
-                  <p>Database: PostreSQL, Sequelize</p>
-                </div>
-                <div class="item">
-                  <i class="fa-solid fa-angle-right"></i>
-                  <p>Unit and Integration Testing</p>
+                  <p>
+                    Formación sólida en ciencias básicas y tecnologías
+                    fundamentales para la resolución de problemas de Ingeniería
+                    en Informática
+                  </p>
                 </div>
                 <div class="item item-last">
                   <i class="fa-solid fa-angle-right"></i>
                   <p>
-                    Quick learning, teamwork, time management, effective
-                    communication, professional attitude.
+                    Aplicación creativa de conocimientos de principios
+                    fundamentales de diferentes disciplinas
                   </p>
-                </div>
-              </div>
-            </div>
-            <img src="img/diploma henry.png" alt="certificate" />
-          </div>
-        </article>
-        <article class="education">
-          <div class="separator"></div>
-          <div class="education-box">
-            <div class="text-info">
-              <div class="title-education">
-                <div class="marker"></div>
-                <h3>Bachelor of Engineering</h3>
-              </div>
-              <div class="institution">
-                <p>Faculty of Engineering - UNJu</p>
-              </div>
-              <div class="year">
-                <p>2009 - 2015</p>
-              </div>
-              <div class="education-info">
-                <div class="item">
-                  <i class="fa-solid fa-angle-right"></i>
-                  <p>The Computer Engineering Education of the School of Engineering of the National University of Jujuy has a solid conceptual training in Basic Science contents, common to all Engineering Degrees, to support and develop the specific disciplines and an adequate command of Basic Technologies translated into the creative application of the knowledge of the fundamental principles of the different disciplines, to the solution of Computer Engineering problems.</p>
                 </div>
               </div>
             </div>
             <img src="img/Diploma UNJu.jfif" alt="certificate" />
           </div>
         </article>
-      </section>
-      <section id="portfolio">
-        <h2>Portfolio</h2>
-        <div class="separator"></div>
-        <article>
-          <div class="title-education">
-            <div class="marker"></div>
-            <h3>Front-end - Static & Dynamic Layouts</h3>
-          </div>
-          <p class="descripcion-portfolio">
-            Static & dynamic layouts using HTML, CSS, SASS and JS
-          </p>
-          <div class="proyectos">
-            <!-- Made in js renderer_maquetados.js -->
+
+        <article class="certifications">
+          <h2>Cursos y Certificaciones</h2>
+          <div class="separator"></div>
+          <div class="certifications-grid">
+            <div class="cert-item">
+              <h4>Django Web Framework</h4>
+              <p>Pluralsight, 2022</p>
+            </div>
+            <div class="cert-item">
+              <h4>Python Advanced Programming</h4>
+              <p>Real Python, 2022</p>
+            </div>
+            <div class="cert-item">
+              <h4>Python for Data Science & Machine Learning</h4>
+              <p>Coursera, 2022</p>
+            </div>
+            <div class="cert-item">
+              <h4>Spring Security & Microservices</h4>
+              <p>Pluralsight, 2021</p>
+            </div>
+            <div class="cert-item">
+              <h4>Spring Framework & Spring Boot</h4>
+              <p>Udemy, 2021</p>
+            </div>
+            <div class="cert-item">
+              <h4>Java Enterprise Development</h4>
+              <p>Oracle University, 2021</p>
+            </div>
+            <div class="cert-item">
+              <h4>
+                Introducción a la Gestión Ágil de Proyectos con Azure DevOps
+              </h4>
+              <p>UCSE, 2020</p>
+            </div>
+            <div class="cert-item">
+              <h4>React and Redux</h4>
+              <p>Sololearn, 2020</p>
+            </div>
+            <div class="cert-item">
+              <h4>CSS, JavaScript, SQL, C, C#, HTML, Java, Python 3</h4>
+              <p>Sololearn, 2019</p>
+            </div>
+            <div class="cert-item">
+              <h4>Git Course, Java Course, SQL Course</h4>
+              <p>Codecademy, 2017</p>
+            </div>
           </div>
         </article>
       </section>
+      <section id="portfolio">
+        <div class="portfolio-header">
+          <h2 class="portfolio-title">
+            <span class="title-icon">💻</span>
+            Portfolio
+          </h2>
+          <div class="separator"></div>
+          <p class="portfolio-subtitle">
+            Proyectos que demuestran mi experiencia en desarrollo full-stack
+          </p>
+        </div>
+
+          <div class="proyectos">
+            <!-- Made in js renderer_maquetados.js -->
+          </div>
+        </div>
+      </section>
       <section id="contacto">
-        <h2>Contact</h2>
+        <h2>Contacto</h2>
         <div class="separator"></div>
 
         <article>
@@ -232,7 +423,7 @@
                 <i class="fa-sharp fa-solid fa-map-location-dot"></i>
               </div>
               <div class="info-contacto">
-                <p class="subt-contacto">Location:</p>
+                <p class="subt-contacto">Ubicación:</p>
                 <p class="detalles-contacto">
                   San Salvador de Jujuy, Jujuy, Argentina
                 </p>
@@ -252,7 +443,7 @@
                 <i class="fa-solid fa-phone"></i>
               </div>
               <div class="info-contacto">
-                <p class="subt-contacto">Telephone:</p>
+                <p class="subt-contacto">Teléfono:</p>
                 <p class="detalles-contacto">+54 388 5733294</p>
               </div>
             </div>
@@ -270,58 +461,57 @@
             <form id="form" name="form">
               <div class="box-name-email">
                 <div>
-                  <label for="name">Your name</label>
+                  <label for="name">Tu nombre</label>
                   <input
-                    class="input-style input-name"
+                    class="input-matrix input-name"
                     type="text"
                     name="name"
                     id="name"
                   />
                   <div class="error-name">
-                    <p>Enter a valid name</p>
+                    <p>Ingresa un nombre válido</p>
                   </div>
                 </div>
                 <div>
-                  <label for="email">Your email</label>
+                  <label for="email">Tu email</label>
                   <input
-                    class="input-style input-email"
+                    class="input-matrix input-email"
                     type="email"
                     name="email"
                     id="email"
                   />
                   <div class="error-email">
-                    <p>Enter a valid email</p>
+                    <p>Ingresa un email válido</p>
                   </div>
                 </div>
               </div>
               <div>
-                <label for="topic">Topic</label>
+                <label for="topic">Asunto</label>
                 <input
-                  class="input-style input-topic"
+                  class="input-matrix input-topic"
                   type="text"
                   name="topic"
                   id="topic"
                 />
                 <div class="error-topic">
-                  <p>Enter a valid topic</p>
+                  <p>Ingresa un asunto válido</p>
                 </div>
               </div>
               <div>
-                <label for="message">Your message</label>
+                <label for="message">Tu mensaje</label>
                 <textarea
-                  class="input-style-textarea input-message"
+                  class="input-matrix-textarea input-message"
                   name="message"
                   id="message"
                   cols="30"
                   rows="10"
                 ></textarea>
                 <div class="error-msg">
-                  <p>Enter a message</p>
+                  <p>Ingresa un mensaje</p>
                 </div>
               </div>
-              <button class="button" type="submit"><p>Send</p></button>
+              <button class="btn-matrix" type="submit"><p>Enviar</p></button>
             </form>
-            
           </div>
         </article>
       </section>
@@ -329,8 +519,8 @@
 
     <footer>
       <div class="autor">
-        <p class="hecho-por">Made by:</p>
-        <p class="fabio">Fabio D. Agañaraz A.</p>
+        <p class="hecho-por">Hecho por:</p>
+        <p class="fabio">Fabio D. Argañaraz A.</p>
       </div>
       <div class="iconos-footer">
         <a
@@ -345,18 +535,38 @@
         </a>
         <a
           rel="noopener"
-          title="instagram"
-          href="https://www.instagram.com/fabiodrizzt"
+          title="email"
+          href="mailto:ing.fabio.arg@gmail.com?subject=Hello%20Fabio,%20From%20Portfolio"
           target="_blank"
         >
           <div class="circulo-icono-footer">
-            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+        </a>
+        <a
+          rel="noopener"
+          title="discord"
+          href="https://discordapp.com/users/70293064240861184"
+          target="_blank"
+        >
+          <div class="circulo-icono-footer">
+            <i class="fa-brands fa-discord"></i>
+          </div>
+        </a>
+        <a
+          rel="noopener"
+          title="x"
+          href="https://x.com/fabiodrizzt"
+          target="_blank"
+        >
+          <div class="circulo-icono-footer">
+            <i class="fa-brands fa-x"></i>
           </div>
         </a>
         <a
           rel="noopener"
           title="github"
-          href="https://github.com/FabioDrizZt=repositories"
+          href="https://github.com/FabioDrizZt"
           target="_blank"
         >
           <div class="circulo-icono-footer">
@@ -365,11 +575,13 @@
         </a>
       </div>
     </footer>
-    <script src="renderizador_de_tecnologias.js"></script>
-    <script src="renderizador_proyectos.js"></script>
+    <script src="js/renderizador_de_tecnologias.js"></script>
+    <script src="js/renderizador_proyectos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="tipeado_developer_header.js"></script>
-    <script src="validacion_input.js"></script>
-    <script src="animacion_flecha.js"></script>
+    <script src="js/tipeado_developer_header.js"></script>
+    <script src="js/validacion_input.js"></script>
+    <script src="js/animacion_flecha.js"></script>
+    <script src="js/matrix_rain.js"></script>
+    <script src="js/matrix_header.js"></script>
   </body>
 </html>

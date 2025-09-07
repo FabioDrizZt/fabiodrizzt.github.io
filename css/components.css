@@ -1,0 +1,388 @@
+/* ========================================
+   COMPONENTS - Componentes reutilizables
+   ======================================== */
+
+/* ===== MATRIX RAIN EFFECT ===== */
+.matrix-rain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.matrix-column {
+  position: absolute;
+  top: -100%;
+  color: var(--matrix-green);
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 14px;
+  line-height: 14px;
+  text-shadow: 0 0 5px var(--matrix-green);
+  animation: matrix-fall linear infinite;
+}
+
+@keyframes matrix-fall {
+  0% {
+    transform: translateY(-100vh);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
+
+/* ===== GLITCH EFFECT ===== */
+.glitch {
+  position: relative;
+  color: var(--matrix-green);
+  font-size: inherit;
+  font-weight: bold;
+  text-transform: uppercase;
+  animation: glitch 2s infinite;
+}
+
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.glitch::before {
+  animation: glitch-1 0.5s infinite;
+  color: #ff0000;
+  z-index: -1;
+}
+
+.glitch::after {
+  animation: glitch-2 0.5s infinite;
+  color: #00ffff;
+  z-index: -2;
+}
+
+@keyframes glitch {
+  0%, 100% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+}
+
+@keyframes glitch-1 {
+  0%, 100% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(2px, -2px);
+  }
+  40% {
+    transform: translate(-2px, 2px);
+  }
+  60% {
+    transform: translate(-2px, -2px);
+  }
+  80% {
+    transform: translate(2px, 2px);
+  }
+}
+
+@keyframes glitch-2 {
+  0%, 100% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(-2px, -2px);
+  }
+}
+
+/* ===== MATRIX CONTAINER BASE ===== */
+.matrix-container {
+  background: linear-gradient(135deg, var(--matrix-black) 0%, var(--matrix-dark-gray) 50%, var(--matrix-black) 100%);
+  border: 2px solid var(--matrix-green);
+  border-radius: 15px;
+  box-shadow: 
+    0 0 30px rgba(0, 255, 0, 0.3),
+    inset 0 0 30px rgba(0, 255, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.matrix-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 50%, rgba(0, 255, 0, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(0, 255, 65, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+/* ===== BOTONES MATRIX ===== */
+.btn-matrix {
+  background: linear-gradient(135deg, var(--matrix-green) 0%, var(--matrix-green-bright) 100%);
+  border: 1px solid var(--matrix-green);
+  border-radius: 5px;
+  color: var(--matrix-black);
+  cursor: pointer;
+  font-size: 1.7rem;
+  font-weight: 300;
+  height: 40px;
+  padding: 0 1rem;
+  text-shadow: 0 0 5px var(--matrix-green);
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.btn-matrix:hover {
+  background: linear-gradient(135deg, var(--matrix-green-bright) 0%, var(--matrix-green) 100%);
+  box-shadow: 0 0 25px var(--matrix-green);
+  transform: translateY(-2px);
+}
+
+.btn-matrix:active {
+  background: linear-gradient(135deg, var(--matrix-green-dark) 0%, var(--matrix-green) 100%);
+  transform: translateY(0);
+}
+
+/* ===== CAJAS DE TECNOLOGÍAS ===== */
+.caja {
+  align-items: center;
+  background: linear-gradient(135deg, var(--matrix-black) 0%, var(--matrix-dark-gray) 100%);
+  border: 2px solid var(--matrix-green);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 255, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  height: 120px;
+  justify-content: center;
+  text-align: center;
+  width: 110px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.caja::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(0, 255, 0, 0.4), transparent);
+  transition: left 0.5s ease;
+}
+
+.caja:hover::before {
+  left: 100%;
+}
+
+.caja:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 255, 0, 0.3);
+  border-color: var(--matrix-green-bright);
+}
+
+.caja p {
+  color: var(--colorSubtitles);
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0.5rem 0.5rem 0 0.5rem;
+  line-height: 1.2;
+  text-shadow: 0 0 5px var(--matrix-green);
+}
+
+.caja img {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.caja:hover img {
+  transform: scale(1.1);
+}
+
+/* ===== INPUTS MATRIX ===== */
+.input-matrix {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--matrix-green);
+  color: var(--matrix-green);
+  height: 4rem;
+  padding: 0rem 1rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  font-family: var(--fuentePrimaria);
+}
+
+.input-matrix:focus {
+  background-color: rgba(0, 255, 0, 0.1);
+  border-color: var(--matrix-green-bright);
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+  outline: none;
+}
+
+.input-matrix-textarea {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--matrix-green);
+  color: var(--matrix-green);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  resize: vertical;
+  font-family: var(--fuentePrimaria);
+}
+
+.input-matrix-textarea:focus {
+  background-color: rgba(0, 255, 0, 0.1);
+  border-color: var(--matrix-green-bright);
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+  outline: none;
+}
+
+/* ===== ICONOS CIRCULARES ===== */
+.icono-circular {
+  align-items: center;
+  background-color: rgba(0, 255, 0, 0.2);
+  border: 1px solid var(--matrix-green);
+  border-radius: 50%;
+  display: flex;
+  height: 44px;
+  justify-content: center;
+  min-width: 44px;
+  width: 44px;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.icono-circular:hover {
+  background-color: rgba(0, 255, 0, 0.3);
+  box-shadow: 0 0 25px var(--matrix-green);
+  transform: scale(1.1);
+}
+
+.icono-circular i {
+  color: var(--matrix-green);
+  font-size: 1.7rem;
+  text-shadow: 0 0 10px var(--matrix-green);
+}
+
+/* ===== BOTÓN FLECHA ARRIBA ===== */
+.enlace-boton {
+  bottom: 20px;
+  position: fixed;
+  right: 20px;
+  text-decoration: none;
+  z-index: 1000;
+}
+
+.up {
+  align-items: center;
+  background: linear-gradient(135deg, var(--matrix-green) 0%, var(--matrix-green-bright) 100%);
+  border: 2px solid var(--matrix-green);
+  border-radius: 50%;
+  height: 45px;
+  justify-content: center;
+  width: 45px;
+  box-shadow: 
+    0 0 15px rgba(0, 255, 0, 0.5),
+    inset 0 0 15px rgba(0, 255, 0, 0.2);
+  transition: all 0.3s ease;
+  display: flex;
+}
+
+.up:hover {
+  background: linear-gradient(135deg, var(--matrix-green-bright) 0%, var(--matrix-green) 100%);
+  box-shadow: 
+    0 0 25px rgba(0, 255, 0, 0.8),
+    inset 0 0 25px rgba(0, 255, 0, 0.3);
+  transform: translateY(-2px) scale(1.05);
+}
+
+.up i {
+  color: var(--matrix-black);
+  font-size: 2rem;
+  text-shadow: 0 0 8px var(--matrix-green);
+  transition: all 0.3s ease;
+}
+
+.up:hover i {
+  color: var(--matrix-black);
+  text-shadow: 0 0 12px var(--matrix-green);
+  transform: scale(1.1);
+}
+
+/* ===== ANIMACIONES ===== */
+@keyframes rotar {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.cargando {
+  animation: rotar 2s;
+  width: 25px;
+}
+
+@keyframes aparecer-desaparecer {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.boton-visible {
+  display: flex;
+  opacity: 1;
+}
+
+@keyframes gradientShift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}

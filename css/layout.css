@@ -1,0 +1,415 @@
+/* ========================================
+   LAYOUT - Estructura principal
+   ======================================== */
+
+/* ===== HEADER ===== */
+.header-pt1 {
+  align-items: center;
+  background: 
+    linear-gradient(135deg, var(--matrix-black) 0%, var(--matrix-dark-gray) 30%, var(--matrix-gray) 60%, var(--matrix-black) 100%),
+    radial-gradient(circle at 50% 50%, rgba(0, 255, 0, 0.05) 0%, transparent 70%);
+  background-size: cover, 100% 100%;
+  display: flex;
+  flex-direction: column;
+  height: 650px;
+  justify-content: space-between;
+  padding: 4rem 0rem;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 3px solid var(--matrix-green);
+  box-shadow: 
+    0 0 30px rgba(0, 255, 0, 0.3),
+    inset 0 0 30px rgba(0, 255, 0, 0.1);
+}
+
+.header-pt1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 50%, rgba(0, 255, 0, 0.15) 0%, transparent 60%),
+    radial-gradient(circle at 80% 20%, rgba(0, 255, 65, 0.12) 0%, transparent 60%),
+    radial-gradient(circle at 40% 80%, rgba(0, 204, 0, 0.1) 0%, transparent 60%),
+    linear-gradient(45deg, transparent 30%, rgba(0, 255, 0, 0.03) 50%, transparent 70%);
+  pointer-events: none;
+  animation: matrix-glow 4s ease-in-out infinite alternate;
+}
+
+/* Efecto Matrix Rain para el header */
+.matrix-rain-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.matrix-rain-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 2px,
+      rgba(0, 255, 0, 0.03) 2px,
+      rgba(0, 255, 0, 0.03) 4px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(0, 255, 0, 0.02) 2px,
+      rgba(0, 255, 0, 0.02) 4px
+    );
+  animation: matrix-grid 8s linear infinite;
+}
+
+/* Animación para el resplandor Matrix */
+@keyframes matrix-glow {
+  0% {
+    opacity: 0.3;
+    filter: brightness(1);
+  }
+  50% {
+    opacity: 0.6;
+    filter: brightness(1.2);
+  }
+  100% {
+    opacity: 0.4;
+    filter: brightness(1.1);
+  }
+}
+
+/* Animación para la grilla Matrix */
+@keyframes matrix-grid {
+  0% {
+    transform: translateY(0);
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(-20px);
+    opacity: 0.1;
+  }
+}
+
+/* Perfil del usuario */
+.yo {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+  z-index: 10;
+}
+
+.yo .icono-yo {
+  background-image: url(../img/perfil.png);
+  background-position: center;
+  background-size: 150%;
+  border-radius: 100%;
+  border: 5px solid var(--matrix-green);
+  height: 200px;
+  width: 200px;
+  box-shadow: 
+    0 0 20px var(--matrix-green),
+    inset 0 0 20px rgba(0, 255, 0, 0.1);
+  position: relative;
+  z-index: 1;
+}
+
+.yo .mi-nombre {
+  color: var(--colorFuenteHeader);
+  font-size: 3rem;
+  font-weight: 400;
+  text-shadow: 
+    0 0 10px var(--matrix-green),
+    0 0 20px var(--matrix-green),
+    0 0 30px var(--matrix-green);
+  position: relative;
+  z-index: 1;
+}
+
+.yo .tipeado-mobile {
+  background-color: rgba(0, 255, 0, 0.1);
+  border: 1px solid var(--matrix-green);
+  border-radius: 5px;
+  height: 40px;
+  margin-bottom: 3rem;
+  width: 288px;
+  box-shadow: 
+    0 0 10px rgba(0, 255, 0, 0.3),
+    inset 0 0 10px rgba(0, 255, 0, 0.1);
+  position: relative;
+  z-index: 1;
+}
+
+.yo .tipeado-mobile .tipeado {
+  font-size: 2.4rem;
+  text-align: start;
+}
+
+/* Navegación */
+.opciones-de-navegacion ul {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  position: relative;
+  z-index: 10;
+}
+
+ul li .opciones {
+  align-items: center;
+  background-color: rgba(0, 255, 0, 0.1);
+  border: 1px solid var(--matrix-green);
+  border-radius: 5px;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  padding: 0 7rem;
+  text-decoration: none;
+  width: 80vw;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+ul li .opciones:hover {
+  background-color: rgba(0, 255, 0, 0.2);
+  box-shadow: 
+    0 0 15px var(--matrix-green),
+    inset 0 0 15px rgba(0, 255, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.opciones .fa-house {
+  margin-right: 8rem;
+}
+
+.opciones-de-navegacion .opciones span {
+  color: var(--colorFuenteHeader);
+  font-size: 2rem;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.opciones i {
+  color: var(--colorFuenteHeader);
+  font-size: 1.8rem;
+  margin-right: 5rem;
+}
+
+.opciones:active {
+  background-color: rgba(73, 78, 102, 0.8);
+}
+
+/* Header parte 2 (desktop) */
+.header-pt2 {
+  background: linear-gradient(135deg, var(--matrix-black) 0%, var(--matrix-dark-gray) 50%, var(--matrix-black) 100%);
+  background-size: cover;
+  display: none;
+  height: calc(100vh - 7.73vh);
+  position: relative;
+  overflow: hidden;
+}
+
+.header-pt2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 50%, rgba(0, 255, 0, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(0, 255, 65, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 40% 80%, rgba(0, 204, 0, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.pt2-contenido {
+  align-items: center;
+  display: flex;
+  height: calc(100vh - 7.73vh);
+  justify-content: space-evenly;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.header-pt2 .pt2-contenido .imagen-grande {
+  background-image: url(../img/perfil.png);
+  background-size: cover;
+  border-radius: 50%;
+  border: 5px solid var(--matrix-green);
+  height: 32vh;
+  width: 32vh;
+  box-shadow: 
+    0 0 30px var(--matrix-green),
+    inset 0 0 30px rgba(0, 255, 0, 0.1);
+  position: relative;
+  z-index: 1;
+}
+
+.pt2-contenido .contenedor-nombre-descr {
+  background-color: rgba(0, 255, 0, 0.1);
+  border: 1px solid var(--matrix-green);
+  border-radius: 3px;
+  height: 200px;
+  width: 700px;
+  box-shadow: 
+    0 0 20px rgba(0, 255, 0, 0.3),
+    inset 0 0 20px rgba(0, 255, 0, 0.1);
+  position: relative;
+  z-index: 1;
+}
+
+.nombre-grande {
+  color: var(--matrix-green);
+  font-size: 7rem;
+  font-weight: 400;
+  margin-left: 2rem;
+  text-shadow: 
+    0 0 10px var(--matrix-green),
+    0 0 20px var(--matrix-green),
+    0 0 30px var(--matrix-green);
+}
+
+.tipeado {
+  color: var(--matrix-green);
+  font-family: var(--fuentePortada);
+  font-size: 4rem;
+  font-weight: 400;
+  margin-left: 2rem;
+  text-shadow: 
+    0 0 10px var(--matrix-green),
+    0 0 20px var(--matrix-green);
+}
+
+.boton-invisible {
+  display: none;
+}
+
+/* ===== MAIN ===== */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main #sobre-mi {
+  margin: 0rem 2.5rem;
+}
+
+main #portfolio {
+  margin-top: 2rem;
+  padding: 0rem 2rem;
+}
+
+main #contacto {
+  margin: 0rem 2.5rem;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  align-items: center;
+  background: linear-gradient(135deg, var(--matrix-black) 0%, var(--matrix-dark-gray) 50%, var(--matrix-black) 100%);
+  border-top: 2px solid var(--matrix-green);
+  display: flex;
+  flex-direction: column;
+  height: 75px;
+  justify-content: space-evenly;
+  padding-bottom: 1rem;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 50%, rgba(0, 255, 0, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(0, 255, 65, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.autor {
+  display: flex;
+  gap: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.autor p {
+  font-size: 1.5rem;
+  color: var(--matrix-green);
+  text-shadow: 0 0 5px var(--matrix-green);
+}
+
+.autor .hecho-por {
+  font-weight: 400;
+}
+
+.autor .fabio {
+  color: var(--matrix-green-bright);
+  font-weight: 300;
+  text-shadow: 
+    0 0 10px var(--matrix-green),
+    0 0 20px var(--matrix-green);
+}
+
+.iconos-footer {
+  display: flex;
+  gap: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.iconos-footer a {
+  text-decoration: none;
+}
+
+.circulo-icono-footer {
+  align-items: center;
+  background-color: rgba(0, 255, 0, 0.1);
+  border: 1px solid var(--matrix-green);
+  border-radius: 50%;
+  display: flex;
+  height: 35px;
+  justify-content: center;
+  width: 35px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+}
+
+.circulo-icono-footer i {
+  color: var(--matrix-green);
+  font-size: 2rem;
+  text-shadow: 0 0 5px var(--matrix-green);
+}
+
+.circulo-icono-footer:hover {
+  background-color: rgba(0, 255, 0, 0.3);
+  box-shadow: 
+    0 0 20px var(--matrix-green),
+    inset 0 0 20px rgba(0, 255, 0, 0.2);
+  transform: translateY(-2px);
+}

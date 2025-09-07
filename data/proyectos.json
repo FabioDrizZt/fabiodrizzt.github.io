@@ -1,0 +1,134 @@
+[
+  {
+    "title": "Omi-Tronics",
+    "imgUrl": "img/projects/omi-tronics.png",
+    "url": "http://omi-tronics.vercel.app/",
+    "descripcion": "Tienda online de tecnología con TV-box, consolas, mouses, teclados, auriculares y más. E-commerce completo con carrito de compras, gestión de productos, y sistema de pagos integrado. Stack: Next.js, Supabase, TypeScript, Tailwind CSS"
+  },
+  {
+    "title": "Gestión Académica",
+    "imgUrl": "img/projects/sga.png",
+    "url": "https://gestion-academica.vercel.app/",
+    "descripcion": "Sistema completo para optimizar y digitalizar procesos educativos con tres paneles: Administración, Profesor y Alumno. Stack: Next.js, Supabase, TypeScript, Tailwind CSS"
+  },
+  {
+    "title": "Aula Gamificada",
+    "imgUrl": "img/projects/aula-gamificada.png",
+    "url": "https://ranking-ayp-c2.vercel.app/",
+    "descripcion": "Plataforma gamificada para la materia Algoritmos y Programación con sistema de ranking y motivación estudiantil. Stack: Next.js, Supabase, TypeScript, Tailwind CSS"
+  },
+  {
+    "title": "Animal Preservation",
+    "imgUrl": "img/projects/animal-preservation.png",
+    "url": "https://preservacion-animal.vercel.app/",
+    "descripcion": "Plataforma para la preservación de animales en Latinoamérica. Proyecto colaborativo con No Country."
+  },
+  {
+    "title": "Henry-Bank",
+    "imgUrl": "img/projects/henry-bank.png",
+    "url": "https://github.com/FabioDrizZt/Henry-Bank",
+    "descripcion": "Aplicación móvil de billetera virtual (Fintech App). E-Wallet con funcionalidades completas de gestión financiera."
+  },
+  {
+    "title": "Sports-Store",
+    "imgUrl": "img/projects/sports-store.png",
+    "url": "https://github.com/FabioDrizZt/Sports-Store",
+    "descripcion": "Tienda online de artículos deportivos. E-commerce completo con gestión de productos y carrito de compras."
+  },
+  {
+    "title": "Brewery-Six-Beer",
+    "imgUrl": "img/projects/brewery-six-beer.png",
+    "url": "https://github.com/FabioDrizZt/Brewery-Six-Beer",
+    "descripcion": "E-commerce para la cervecería Six-Beer. Plataforma de venta online especializada en productos cerveceros."
+  },
+  {
+    "title": "Billetera Virtual",
+    "imgUrl": "img/projects/billetera-virtual.png",
+    "url": "https://examen-billetera-virtual.vercel.app/",
+    "descripcion": "Examen de manipulacion del DOM con JavaScript, inspirado en mercado pago"
+  },
+  {
+    "title": " Juego de Trivia",
+    "imgUrl": "img/projects/trivia.gif",
+    "url": "https://examen-billetera-virtual.vercel.app/",
+    "descripcion": "Examen de manipulacion del DOM con JavaScript, inspirado en Kahoot"
+  },
+  {
+    "title": "CV-Batman",
+    "imgUrl": "img/projects/batman.gif",
+    "url": "https://fabiodrizzt.github.io/CV-Batman/",
+    "descripcion": "CV temático de Batman con diseño creativo y animaciones"
+  },
+  {
+    "title": "HTML Forms",
+    "imgUrl": "img/projects/htmlform.gif",
+    "url": "https://fabiodrizzt.github.io/Formularios-en-HTML/",
+    "descripcion": "Formularios HTML con validación y estilos avanzados"
+  },
+  {
+    "title": "Animaciones CSS",
+    "imgUrl": "img/projects/animaciones.gif",
+    "url": "https://fabiodrizzt.github.io/Animaciones/",
+    "descripcion": "Colección de animaciones CSS y transiciones"
+  },
+  {
+    "title": "PseudoSelectores",
+    "imgUrl": "img/projects/PseudoSelectores.gif",
+    "url": "https://fabiodrizzt.github.io/PseudoSelectores/",
+    "descripcion": "Demostración de pseudo-selectores CSS"
+  },
+  {
+    "title": "Pizza&Front",
+    "imgUrl": "img/projects/pizza.gif",
+    "url": "https://fabiodrizzt.github.io/PizzaandFront/",
+    "descripcion": "Landing page para pizzería con diseño moderno"
+  },
+  {
+    "title": "Super Heroes",
+    "imgUrl": "img/projects/sup.gif",
+    "url": "https://fabiodrizzt.github.io/SuperHeroes/",
+    "descripcion": "Galería interactiva de superhéroes"
+  },
+  {
+    "title": "Game Shop",
+    "imgUrl": "img/projects/game.png",
+    "url": "https://fabiodrizzt.github.io/GameShop/",
+    "descripcion": "Tienda de videojuegos con catálogo interactivo"
+  },
+  {
+    "title": "Manage",
+    "imgUrl": "img/projects/manage.png",
+    "url": "https://fabiodrizzt.github.io/Manage/",
+    "descripcion": "Dashboard de gestión empresarial"
+  },
+  {
+    "title": "Pet Shop",
+    "imgUrl": "img/projects/pet-shop.png",
+    "url": "https://fabiodrizzt.github.io/PetShop/",
+    "descripcion": "Sitio web para tienda de mascotas"
+  },
+  {
+    "title": "Instafront",
+    "imgUrl": "img/projects/instafront.png",
+    "url": "https://fabiodrizzt.github.io/InstaFront/",
+    "descripcion": "Clon de Instagram con funcionalidades básicas"
+  },
+  {
+    "title": "To Do List",
+    "imgUrl": "img/projects/to-do-list-checklist.gif",
+    "url": "https://fabiodrizzt.github.io/Lista-de-Tareas/",
+    "descripcion": "Aplicación de lista de tareas con persistencia local"
+  },
+  {
+    "title": "Barbie's Tasks",
+    "imgUrl": "img/projects/barbie.gif",
+    "url": "https://fabiodrizzt.github.io/Mi-Lista-de-Tareas-de-Barbie/",
+    "descripcion": "Lista de tareas temática de Barbie"
+  },
+  {
+    "title": "Slide Puzzle 3x3",
+    "imgUrl": "img/projects/slide-puzzle.gif",
+    "url": "https://fabiodrizzt.github.io/Slide-Puzzle-3x3/",
+    "descripcion": "Juego de puzzle deslizante 3x3"
+  }
+]

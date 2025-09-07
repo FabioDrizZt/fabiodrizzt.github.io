@@ -1,0 +1,257 @@
+[
+  {
+    "imgUrl": "img/skills/react.png",
+    "alt": "React",
+    "nombreDeTecnologia": "React"
+  },
+  {
+    "imgUrl": "img/skills/nextjs.png",
+    "alt": "Next.js",
+    "nombreDeTecnologia": "Next.js"
+  },
+  {
+    "imgUrl": "img/skills/js.png",
+    "alt": "javascript",
+    "nombreDeTecnologia": "JavaScript"
+  },
+  {
+    "imgUrl": "img/skills/typescript.png",
+    "alt": "typescript",
+    "nombreDeTecnologia": "TypeScript"
+  },
+  {
+    "imgUrl": "img/skills/html-5.gif",
+    "alt": "html 5",
+    "nombreDeTecnologia": "HTML5"
+  },
+  {
+    "imgUrl": "img/skills/css-3.svg",
+    "alt": "css 3",
+    "nombreDeTecnologia": "CSS3"
+  },
+  {
+    "imgUrl": "img/skills/tailwind.png",
+    "alt": "Tailwind CSS",
+    "nombreDeTecnologia": "Tailwind CSS"
+  },
+  {
+    "imgUrl": "img/skills/astro.png",
+    "alt": "Astro",
+    "nombreDeTecnologia": "Astro"
+  },
+  {
+    "imgUrl": "img/skills/sass.png",
+    "alt": "sass",
+    "nombreDeTecnologia": "SASS"
+  },
+  {
+    "imgUrl": "img/skills/bootstrap.png",
+    "alt": "Bootstrap",
+    "nombreDeTecnologia": "Bootstrap"
+  },
+  {
+    "imgUrl": "img/skills/styled-components.png",
+    "alt": "styled-components",
+    "nombreDeTecnologia": "Styled Components"
+  },
+  {
+    "imgUrl": "img/skills/figma.gif",
+    "alt": "figma",
+    "nombreDeTecnologia": "Figma"
+  },
+  {
+    "imgUrl": "img/skills/java.png",
+    "alt": "java",
+    "nombreDeTecnologia": "Java"
+  },
+  {
+    "imgUrl": "img/skills/spring.png",
+    "alt": "Spring Boot",
+    "nombreDeTecnologia": "Spring Boot"
+  },
+  {
+    "imgUrl": "img/skills/spring-security.png",
+    "alt": "Spring Security",
+    "nombreDeTecnologia": "Spring Security"
+  },
+  {
+    "imgUrl": "img/skills/hibernate.png",
+    "alt": "Hibernate",
+    "nombreDeTecnologia": "Hibernate"
+  },
+  {
+    "imgUrl": "img/skills/nodejs.png",
+    "alt": "Node.js",
+    "nombreDeTecnologia": "Node.js"
+  },
+  {
+    "imgUrl": "img/skills/express.png",
+    "alt": "Express",
+    "nombreDeTecnologia": "Express"
+  },
+  {
+    "imgUrl": "img/skills/python.png",
+    "alt": "Python",
+    "nombreDeTecnologia": "Python"
+  },
+  {
+    "imgUrl": "img/skills/django.png",
+    "alt": "Django",
+    "nombreDeTecnologia": "Django"
+  },
+  {
+    "imgUrl": "img/skills/flask.png",
+    "alt": "Flask",
+    "nombreDeTecnologia": "Flask"
+  },
+  {
+    "imgUrl": "img/skills/php.png",
+    "alt": "PHP",
+    "nombreDeTecnologia": "PHP"
+  },
+  {
+    "imgUrl": "img/skills/laravel.png",
+    "alt": "Laravel",
+    "nombreDeTecnologia": "Laravel"
+  },
+  {
+    "imgUrl": "img/skills/postgresql.png",
+    "alt": "PostgreSQL",
+    "nombreDeTecnologia": "PostgreSQL"
+  },
+  {
+    "imgUrl": "img/skills/mongodb.png",
+    "alt": "mongoDB",
+    "nombreDeTecnologia": "MongoDB"
+  },
+  {
+    "imgUrl": "img/skills/mysql-official.svg",
+    "alt": "mysql",
+    "nombreDeTecnologia": "MySQL"
+  },
+  {
+    "imgUrl": "img/skills/sequelize.png",
+    "alt": "Sequelize",
+    "nombreDeTecnologia": "Sequelize"
+  },
+  {
+    "imgUrl": "img/skills/jest.png",
+    "alt": "Jest",
+    "nombreDeTecnologia": "Jest"
+  },
+  {
+    "imgUrl": "img/skills/vitest.png",
+    "alt": "Vitest",
+    "nombreDeTecnologia": "Vitest"
+  },
+  {
+    "imgUrl": "img/skills/testing.png",
+    "alt": "testing",
+    "nombreDeTecnologia": "Testing"
+  },
+  {
+    "imgUrl": "img/skills/git.png",
+    "alt": "Git",
+    "nombreDeTecnologia": "Git"
+  },
+  {
+    "imgUrl": "img/skills/github.png",
+    "alt": "GitHub",
+    "nombreDeTecnologia": "GitHub"
+  },
+  {
+    "imgUrl": "img/skills/docker.png",
+    "alt": "Docker",
+    "nombreDeTecnologia": "Docker"
+  },
+  {
+    "imgUrl": "img/skills/vscode.png",
+    "alt": "VS Code",
+    "nombreDeTecnologia": "VS Code"
+  },
+  {
+    "imgUrl": "img/skills/intellij.png",
+    "alt": "IntelliJ IDEA",
+    "nombreDeTecnologia": "IntelliJ IDEA"
+  },
+  {
+    "imgUrl": "img/skills/vite.png",
+    "alt": "Vite",
+    "nombreDeTecnologia": "Vite"
+  },
+  {
+    "imgUrl": "img/skills/postman.png",
+    "alt": "Postman",
+    "nombreDeTecnologia": "Postman"
+  },
+  {
+    "imgUrl": "img/skills/vercel.png",
+    "alt": "Vercel",
+    "nombreDeTecnologia": "Vercel"
+  },
+  {
+    "imgUrl": "img/skills/netlify.png",
+    "alt": "Netlify",
+    "nombreDeTecnologia": "Netlify"
+  },
+  {
+    "imgUrl": "img/skills/bash.png",
+    "alt": "Bash",
+    "nombreDeTecnologia": "Bash"
+  },
+  {
+    "imgUrl": "img/skills/bun.png",
+    "alt": "Bun",
+    "nombreDeTecnologia": "Bun"
+  },
+  {
+    "imgUrl": "img/skills/markdown.png",
+    "alt": "Markdown",
+    "nombreDeTecnologia": "Markdown"
+  },
+  {
+    "imgUrl": "img/skills/github-copilot.png",
+    "alt": "GitHub Copilot",
+    "nombreDeTecnologia": "GitHub Copilot"
+  },
+  {
+    "imgUrl": "img/skills/claude.png",
+    "alt": "Claude AI",
+    "nombreDeTecnologia": "Claude AI"
+  },
+  {
+    "imgUrl": "img/skills/cursor-ai.png",
+    "alt": "Cursor AI",
+    "nombreDeTecnologia": "Cursor AI"
+  },
+  {
+    "imgUrl": "img/skills/v0-dev.png",
+    "alt": "V0.dev",
+    "nombreDeTecnologia": "V0.dev"
+  },
+  {
+    "imgUrl": "img/skills/agil.png",
+    "alt": "metodologias agiles",
+    "nombreDeTecnologia": "Metodologías Ágiles"
+  },
+  {
+    "imgUrl": "img/skills/scrum.png",
+    "alt": "Scrum",
+    "nombreDeTecnologia": "Scrum"
+  },
+  {
+    "imgUrl": "img/skills/kanban.png",
+    "alt": "Kanban",
+    "nombreDeTecnologia": "Kanban"
+  },
+  {
+    "imgUrl": "img/skills/code-review.gif",
+    "alt": "Code Reviews",
+    "nombreDeTecnologia": "Code Reviews"
+  },
+  {
+    "imgUrl": "img/skills/go.png",
+    "alt": "Go (Golang)",
+    "nombreDeTecnologia": "Go (Golang)"
+  }
+]

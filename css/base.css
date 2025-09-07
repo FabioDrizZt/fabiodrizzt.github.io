@@ -1,0 +1,100 @@
+/* ========================================
+   BASE STYLES - Variables, Reset, Base
+   ======================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&display=swap');
+@import url('https://use.fontawesome.com/releases/v6.2.1/css/all.css');
+
+/* Reset y configuración base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0%;
+}
+
+/* Variables CSS centralizadas */
+:root {
+  /* Matrix Color Palette */
+  --matrix-green: #00ff00;
+  --matrix-green-bright: #00ff41;
+  --matrix-green-dim: #00cc00;
+  --matrix-green-dark: #003300;
+  --matrix-black: #000000;
+  --matrix-dark-gray: #0a0a0a;
+  --matrix-gray: #1a1a1a;
+  --matrix-light-gray: #333333;
+  
+  /* Legacy variables actualizadas para tema Matrix */
+  --backgroundPortfolio: rgba(0, 255, 0, 0.1);
+  --colorFuenteHeader: #00ff00;
+  --colorPrimarioFondo: #000000;
+  --colorSubtitles: #00ff41;
+  --fuentePortada: 'Orbitron', monospace;
+  --fuentePrimaria: 'Share Tech Mono', monospace;
+  --tamanioFuenteH2: 2.5rem;
+}
+
+/* Configuración HTML y Body */
+html {
+  font-family: var(--fuentePrimaria);
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--matrix-black);
+  color: var(--matrix-green);
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Estilos base para elementos comunes */
+h2 {
+  color: var(--colorSubtitles);
+  font-size: var(--tamanioFuenteH2);
+  font-weight: 400;
+  margin: 2rem 0rem 0.5rem 0rem;
+  text-shadow: 
+    0 0 10px var(--matrix-green),
+    0 0 20px var(--matrix-green);
+  position: relative;
+}
+
+h2::before {
+  content: '> ';
+  color: var(--matrix-green);
+  font-family: 'Share Tech Mono', monospace;
+}
+
+h3 {
+  font-size: 2.1rem;
+  font-weight: 400;
+  color: var(--matrix-green);
+  text-shadow: 0 0 10px var(--matrix-green);
+}
+
+.separator {
+  background: linear-gradient(90deg, var(--colorSubtitles), transparent);
+  height: 3px;
+  margin-bottom: 1rem;
+  width: 50px;
+  box-shadow: 0 0 10px var(--matrix-green);
+}
+
+/* Estilos base para texto */
+.intro {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: var(--matrix-green);
+  text-shadow: 0 0 5px var(--matrix-green);
+}
+
+/* Estilos base para listas */
+ul li {
+  list-style: none;
+}
+
+/* Estilos base para iframe */
+iframe {
+  border: 0;
+}
