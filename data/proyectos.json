@@ -48,6 +48,13 @@
     "descripcion": "Examen de manipulacion del DOM con JavaScript, inspirado en mercado pago"
   },
   {
+    "title": "Tienda Virtual ML",
+    "imgUrl": "img/projects/mercado-libre.png",
+    "url": "https://examen-js-tienda.vercel.app/",
+    "descripcion": "Examen de manipulacion del DOM con JavaScript, inspirado en mercado libre"
+  },
+  
+  {
     "title": " Juego de Trivia",
     "imgUrl": "img/projects/trivia.gif",
     "url": "https://examen-billetera-virtual.vercel.app/",
