@@ -70,28 +70,6 @@ fabiodrizzt.github.io/
 - **GitHub Pages**: Hosting estático
 - **Responsive Design**: Mobile-first approach
 
-## 🚀 Instalación y Uso
-
-1. **Clonar el repositorio**:
-   ```bash
-   git clone https://github.com/FabioDrizZt/fabiodrizzt.github.io.git
-   ```
-
-2. **Abrir en navegador**:
-   ```bash
-   # Simplemente abrir index.html en cualquier navegador
-   open index.html
-   ```
-
-3. **Servidor local (opcional)**:
-   ```bash
-   # Con Python
-   python -m http.server 8000
-   
-   # Con Node.js
-   npx serve .
-   ```
-
 ## 📋 Secciones del Portfolio
 
 1. **🏠 Home**: Presentación principal con efectos Matrix
